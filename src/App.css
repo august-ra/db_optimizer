@@ -1,0 +1,72 @@
+#root {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+
+  padding: 8px;
+  min-height: 90vh;
+
+  &.left {
+    width: 450px;
+  }
+
+  &.right {
+    width: 100%;
+    white-space: nowrap;
+  }
+}
+
+.app {
+  padding: 8px;
+  min-height: 100vh;
+  overflow-y: auto;
+
+  display: flex;
+  gap: 32px;
+}
+
+.top {
+  line-height: 2;
+
+  &.left {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    & div {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &.right {
+    flex: 1 1 auto;
+  }
+}
+
+.operations {
+  color: lightskyblue;
+}
+
+input[value="select"] {
+  & + span {
+    color: lightgreen;
+  }
+
+  &:checked + span {
+    font-style: italic;
+  }
+}
+
+input[value="delete"] {
+  & + span {
+    color: lightcoral;
+  }
+
+  &:checked + span {
+    font-style: italic;
+  }
+}
