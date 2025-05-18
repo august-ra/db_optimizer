@@ -66,8 +66,7 @@ async function deleteSameBatches() {
       )
       .catch(() => {
         console.log("Stopped because of error...\n")
-      }
-    )
+      })
   } catch (err) {
     console.error("Ошибка:", err)
   } finally {
